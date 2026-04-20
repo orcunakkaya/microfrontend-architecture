@@ -4,7 +4,7 @@ const DashboardRemote = lazy(() => import('dashboard_remote/DashboardApp'));
 
 function DashboardPage() {
   return (
-    <div style={{ padding: 24 }}>
+    <div>
       <h1>Dashboard</h1>
 
       <Suspense fallback={<div>Dashboard yükleniyor...</div>}>

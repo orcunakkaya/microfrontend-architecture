@@ -10,19 +10,31 @@ function AppLayout({ children }: AppLayoutProps) {
     <div
       style={{
         display: 'grid',
-        gridTemplateColumns: '240px 1fr',
+        gridTemplateColumns: '260px 1fr',
         minHeight: '100vh',
+        backgroundColor: '#f3f4f6',
       }}
     >
       <Sidebar />
 
       <main
         style={{
-          padding: 24,
-          backgroundColor: '#f9fafb',
+          padding: 32,
+          boxSizing: 'border-box',
         }}
       >
-        {children}
+        <div
+          style={{
+            backgroundColor: '#ffffff',
+            border: '1px solid #e5e7eb',
+            borderRadius: 16,
+            padding: 24,
+            minHeight: 'calc(100vh - 64px)',
+            boxSizing: 'border-box',
+          }}
+        >
+          {children}
+        </div>
       </main>
     </div>
   );

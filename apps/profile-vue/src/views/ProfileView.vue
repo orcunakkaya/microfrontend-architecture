@@ -1,9 +1,10 @@
 <template>
-  <div style="padding: 24px">
-    <h1>Profile Remote</h1>
-    <p>Bu ekran Vue remote içinden geliyor.</p>
+  <div>
+    <p style="color: #6b7280; line-height: 1.6">
+      Bu ekran Vue remote uygulamasından mount edilmektedir.
+    </p>
 
-    <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap alignItems: center; justifyContent: center;">
+    <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap">
       <ProfileInfoCard title="Ad Soyad" value="Orçun Akkaya" />
       <ProfileInfoCard title="Rol" value="Frontend Developer" />
       <ProfileInfoCard title="Şehir" value="Istanbul" />

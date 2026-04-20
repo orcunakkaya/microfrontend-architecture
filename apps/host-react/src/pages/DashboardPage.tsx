@@ -22,7 +22,7 @@ function DashboardLoading() {
 function DashboardPage() {
   return (
     <div>
-      <h1 style={{ marginTop: 0 }}>Dashboard</h1>
+      <h1 style={{ marginTop: 20 }}>Dashboard</h1>
 
       <RemoteErrorBoundary
         fallbackTitle="Dashboard yüklenemedi"

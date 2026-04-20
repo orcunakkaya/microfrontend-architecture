@@ -4,7 +4,7 @@
       Bu ekran Vue remote uygulamasından mount edilmektedir.
     </p>
 
-    <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap">
+    <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap; justify-content: center; align-items: center;">
       <ProfileInfoCard title="Ad Soyad" value="Orçun Akkaya" />
       <ProfileInfoCard title="Rol" value="Frontend Developer" />
       <ProfileInfoCard title="Şehir" value="Istanbul" />

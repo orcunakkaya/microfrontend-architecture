@@ -13,6 +13,8 @@ function DashboardPage() {
           gap: 16,
           marginTop: 24,
           flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         <StatCard title="Toplam Kullanıcı" value="1,284" />

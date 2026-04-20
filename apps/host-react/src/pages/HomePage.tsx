@@ -1,7 +1,7 @@
 function HomePage() {
   return (
     <div>
-      <h1 style={{ marginTop: 0, marginBottom: 12 }}>Home</h1>
+      <h1 style={{ marginTop: 20, marginBottom: 12 }}>Home</h1>
       <p style={{ color: '#4b5563', lineHeight: 1.6, marginBottom: 24 }}>
         Bu proje, Module Federation kullanarak React host uygulaması içinde
         React ve Vue remote uygulamalarının birlikte nasıl çalıştırılabileceğini
@@ -13,6 +13,8 @@ function HomePage() {
           display: 'flex',
           gap: 16,
           flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <div

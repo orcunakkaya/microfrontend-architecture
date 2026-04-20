@@ -3,7 +3,7 @@ import VueRemote from '../components/remote/VueRemote';
 function ProfilePage() {
   return (
     <div>
-      <h1 style={{ marginTop: 0 }}>Profile</h1>
+      <h1 style={{ marginTop: 20 }}>Profile</h1>
       <VueRemote />
     </div>
   );

@@ -1,21 +1,27 @@
-import { Suspense, lazy } from 'react';
-
-const DashboardRemote = lazy(() => import('dashboard_remote/DashboardApp'));
-import VueRemote from './components/remote/VueRemote';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import DashboardPage from './pages/DashboardPage';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
   return (
-    <div style={{ padding: 24 }}>
-      <h1>Host App</h1>
+    <BrowserRouter>
+      <div style={{ padding: 24 }}>
+        <h1>Host App</h1>
 
-      <Suspense fallback={<div>Dashboard yükleniyor...</div>}>
-        <DashboardRemote />
-      </Suspense>
+        <nav style={{ display: 'flex', gap: 16, marginBottom: 24 }}>
+          <Link to="/">Home</Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/profile">Profile</Link>
+        </nav>
 
-      <h2>Vue Remote</h2>
-      <VueRemote />
-
-    </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

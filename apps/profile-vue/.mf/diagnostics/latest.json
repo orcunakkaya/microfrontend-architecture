@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project C:\\\\Users\\\\berkay\\\\Desktop\\\\microfrontend-demo\\\\apps\\\\profile-vue\\\\node_modules\\\\.federation\\\\tsconfig.e0977272e1648f3780d0154c5ee30fab.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project C:\\\\Users\\\\berkay\\\\Desktop\\\\microfrontend-demo\\\\apps\\\\profile-vue\\\\node_modules\\\\.federation\\\\tsconfig.d0a05a17ab81c59d3a96770116d78d87.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "npx tsc --project C:\\Users\\berkay\\Desktop\\microfrontend-demo\\apps\\profile-vue\\node_modules\\.federation\\tsconfig.e0977272e1648f3780d0154c5ee30fab.json"
+      "cmd": "npx tsc --project C:\\Users\\berkay\\Desktop\\microfrontend-demo\\apps\\profile-vue\\node_modules\\.federation\\tsconfig.d0a05a17ab81c59d3a96770116d78d87.json"
     },
-    "timestamp": 1776700181813
+    "timestamp": 1776700628527
   }
 }

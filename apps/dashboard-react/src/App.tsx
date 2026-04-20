@@ -1,16 +1,9 @@
 
 import './App.css'
+import DashboardPage from './pages/DashboardPage'
 
 function App() {
-
-  return (
-    <>
-      <div style={{ padding: 24 }}>
-        <h1>Dashboard Remote</h1>
-        <p>Bu ekran React remote içinden geliyor.</p>
-      </div>
-    </>
-  )
+  return <DashboardPage />
 }
 
 export default App

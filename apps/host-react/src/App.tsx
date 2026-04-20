@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 
 const DashboardRemote = lazy(() => import('dashboard_remote/DashboardApp'));
-import VueRemote from './components/VueRemote';
+import VueRemote from './components/remote/VueRemote';
 
 function App() {
   return (

@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project C:\\\\Users\\\\berkay\\\\Desktop\\\\microfrontend-demo\\\\apps\\\\dashboard-react\\\\node_modules\\\\.federation\\\\tsconfig.805d45d3e9e8ba883a432fd6f83853a4.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project C:\\\\Users\\\\berkay\\\\Desktop\\\\microfrontend-demo\\\\apps\\\\dashboard-react\\\\node_modules\\\\.federation\\\\tsconfig.cdde8ef7a181ff6018f64b174840e796.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "npx tsc --project C:\\Users\\berkay\\Desktop\\microfrontend-demo\\apps\\dashboard-react\\node_modules\\.federation\\tsconfig.805d45d3e9e8ba883a432fd6f83853a4.json"
+      "cmd": "npx tsc --project C:\\Users\\berkay\\Desktop\\microfrontend-demo\\apps\\dashboard-react\\node_modules\\.federation\\tsconfig.cdde8ef7a181ff6018f64b174840e796.json"
     },
-    "timestamp": 1776703137583
+    "timestamp": 1776704018500
   }
 }

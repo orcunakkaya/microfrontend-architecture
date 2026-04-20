@@ -1,4 +1,5 @@
 import { Suspense, lazy } from 'react';
+import RemoteErrorBoundary from '../components/remote/RemoteErrorBoundary';
 
 const DashboardRemote = lazy(() => import('dashboard_remote/DashboardApp'));
 
@@ -23,9 +24,14 @@ function DashboardPage() {
     <div>
       <h1 style={{ marginTop: 0 }}>Dashboard</h1>
 
-      <Suspense fallback={<DashboardLoading />}>
-        <DashboardRemote />
-      </Suspense>
+      <RemoteErrorBoundary
+        fallbackTitle="Dashboard yüklenemedi"
+        fallbackMessage="React remote uygulaması şu anda görüntülenemiyor."
+      >
+        <Suspense fallback={<DashboardLoading />}>
+          <DashboardRemote />
+        </Suspense>
+      </RemoteErrorBoundary>
     </div>
   );
 }

@@ -1,7 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import RemoteErrorFallback from './RemoteErrorFallback';
 
 export default function VueRemote() {
   const ref = useRef<HTMLDivElement>(null);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     import('profile_remote/mount')
@@ -12,8 +14,18 @@ export default function VueRemote() {
       })
       .catch((err) => {
         console.error('Vue remote yüklenemedi:', err);
+        setHasError(true);
       });
   }, []);
+
+  if (hasError) {
+    return (
+      <RemoteErrorFallback
+        title="Profile yüklenemedi"
+        message="Vue remote uygulaması şu anda görüntülenemiyor."
+      />
+    );
+  }
 
   return <div ref={ref} />;
 }
